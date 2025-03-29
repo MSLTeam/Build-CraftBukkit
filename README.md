@@ -1,7 +1,7 @@
 # MSL API CraftBukkit 自动构建服务
-![](https://shields.io/github/license/Youkii-Chen/Spigot-Generaror)
+![](https://shields.io/github/license/MSLTeam/Build-CraftBukkit)
 ![](https://shields.io/badge/Latest-1.21.5-blue)
-![](https://shields.io/github/downloads/MSLTeam/Build-Spigot/total)
+![](https://shields.io/github/downloads/MSLTeam/Build-CraftBukkit/total)
 
 高速下载源：[CraftBukkit | MSL资源库](https://files.mslmc.cn/Server-Cores/CraftBukkit)
 
