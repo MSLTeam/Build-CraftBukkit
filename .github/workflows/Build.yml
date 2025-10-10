@@ -3,7 +3,7 @@
 
 name: 构建CraftBukkit
 env:
-    latest: '1.21.9'
+    latest: '1.21.10'
 
 on:
     workflow_dispatch:
