@@ -37,14 +37,13 @@ jobs:
             ver: ${{ matrix.ver }}
 
         steps:
+            - uses: actions/checkout@v4
+
             - name: 设置Java环境
               uses: actions/setup-java@v2
               with:
                   distribution: "adopt"
                   java-version: "21"
-
-            - name: 下载构建工具
-              run: wget https://drive.dnxshare.cn/f/me2I6/BuildTools.jar
 
             - name: 创建输出目录
               run: mkdir ./outputs
@@ -62,7 +61,7 @@ jobs:
               with:
                   name: outputs-${{ matrix.ver }}
                   path: outputs
-                  
+                   
     build_on_java17:
         # for minecraft 1.17+
         runs-on: ubuntu-latest
@@ -87,14 +86,13 @@ jobs:
             ver: ${{ matrix.ver }}
 
         steps:
+            - uses: actions/checkout@v4
+
             - name: 设置Java环境
               uses: actions/setup-java@v2
               with:
                   distribution: "adopt"
                   java-version: "17"
-
-            - name: 下载构建工具
-              run: wget https://drive.dnxshare.cn/f/me2I6/BuildTools.jar
 
             - name: 创建输出目录
               run: mkdir ./outputs
@@ -126,14 +124,13 @@ jobs:
             ver: ${{ matrix.ver }}
 
         steps:
+            - uses: actions/checkout@v4
+
             - name: 设置Java环境
               uses: actions/setup-java@v2
               with:
                   distribution: "adopt"
                   java-version: "16"
-
-            - name: 下载构建工具
-              run: wget https://drive.dnxshare.cn/f/me2I6/BuildTools.jar
 
             - name: 创建输出目录
               run: mkdir ./outputs
@@ -192,14 +189,13 @@ jobs:
             ver: ${{ matrix.ver }}
 
         steps:
+            - uses: actions/checkout@v4
+
             - name: 设置Java环境
               uses: actions/setup-java@v3
               with:
                   distribution: "adopt"
                   java-version: "8"
-
-            - name: 下载构建工具
-              run: wget https://drive.dnxshare.cn/f/me2I6/BuildTools.jar
 
             - name: 创建输出目录
               run: mkdir ./outputs
@@ -257,5 +253,4 @@ jobs:
                 update: true 
                 token: ${{ secrets.GITHUB_TOKEN }}
                 name: Builds  
-                tag_name: Release 
-
+                tag_name: Release
