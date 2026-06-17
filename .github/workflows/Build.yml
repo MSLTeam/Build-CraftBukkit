@@ -19,6 +19,7 @@ jobs:
         strategy:
             matrix:
                 ver:
+                    - '26.2'
                     - '26.1'
         env:
             ver: ${{ matrix.ver }}
